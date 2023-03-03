@@ -1,0 +1,77 @@
+// Font sizes
+$font-small: 0.8125rem;
+$font-medium: 0.875rem;
+$font-large: 0.9375rem;
+
+// Colors
+$color-font-light: #3c4043;
+$color-font-dark: rgba(0,0,0,.87);
+$color-search-border: #dfe1e5;
+$color-button: #f8f9fa;
+$color-button-border: #dadce0;
+$color-background: #70757a;
+
+
+// Boilerplate
+* {
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    -webkit-text-size-adjust: none; /* for iOS Safari */
+    text-size-adjust: none; /* for other mobile browsers */
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+            scroll-behavior: smooth;
+    }
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}   
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
+
+
+// Project specific styles
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 3rem;
+    padding: 0.3rem;
+
+    a{
+        color: $color-font-dark;
+        text-decoration: none;
+        font-size: $font-small;
+        padding-left: 0.9375rem;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    
+    a[href="advanced.html"]{
+        padding-right: 15px;
+    }
+
+}

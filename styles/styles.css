@@ -1,1 +1,55 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  -webkit-text-size-adjust: none; /* for iOS Safari */
+  -moz-text-size-adjust: none;
+       text-size-adjust: none; /* for other mobile browsers */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 3rem;
+  padding: 0.3rem;
+}
+nav a {
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  font-size: 0.8125rem;
+  padding-left: 0.9375rem;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav a[href="advanced.html"] {
+  padding-right: 15px;
+}/*# sourceMappingURL=styles.css.map */
