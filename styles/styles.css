@@ -52,4 +52,9 @@ nav a:hover {
 }
 nav a[href="advanced.html"] {
   padding-right: 15px;
+}
+
+#logo_section {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */
