@@ -6,10 +6,15 @@ $font-large: 0.9375rem;
 // Colors
 $color-font-light: #3c4043;
 $color-font-dark: rgba(0,0,0,.87);
+
 $color-search-border: #dfe1e5;
 $color-button: #f8f9fa;
 $color-button-border: #dadce0;
+$color-button-shadow: rgb(0 0 0 / 10%);
 $color-background: #70757a;
+$color-search-shadow:rgb(32 33 36 / 28%);
+$color-shadow-border: rgba(223,225,229,0);
+
 
 
 // Boilerplate
@@ -29,10 +34,6 @@ html {
             scroll-behavior: smooth;
     }
 }
-
-:focus:not(:focus-visible) {
-    outline: none;
-}   
 
 img {
     display: block;
@@ -55,7 +56,7 @@ summary,
 nav{
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     height: 3rem;
     padding: 0.3rem;
 
@@ -79,4 +80,64 @@ nav{
 #logo_section{
     display: flex;
     justify-content: center;
+}
+
+
+#form_section{
+    padding: 1.25rem;
+
+    form{
+
+        #search_bar_container{
+            display: flex;
+
+            #search_bar{
+                margin: 0 auto;
+                flex: 1;
+                max-width: 584px;
+                height: 44px;
+                border: 1px solid $color-search-border;
+                border-radius: 24px;
+                background-color: #FFF;
+
+                &:hover{
+                    background-color: #fff;
+                    box-shadow: 0 1px 6px $color-search-shadow;
+                    border-color: $color-shadow-border;
+                }
+
+                &:focus-visible{
+                    box-shadow: 0 1px 3px $color-search-shadow;
+                    outline: 1px $color-shadow-border;
+                }
+            }
+        }
+
+        #search_button_container{
+            padding-top: 18px;
+            display: flex;
+            justify-content: center;
+
+            .search_button{
+                margin: 11px 5px;
+                height: 36px;
+                padding: 0px 16px;
+                margin-top: 11px;
+                min-width: 54px;
+                text-align: center;
+                border: 1px solid $color-button;
+                border-radius: 4px;
+                background-color: $color-button;
+                color: $color-font-light;
+                font-size: $font-medium;
+
+                &:hover{
+                    box-shadow: 0 1px 1px $color-button-shadow;
+                    background-color: $color-button;
+                    border: 1px solid $color-button-border;
+                    color: #202124
+                }
+            }
+        }
+    }
 }

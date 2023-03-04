@@ -15,10 +15,6 @@ html {
     scroll-behavior: smooth;
   }
 }
-:focus:not(:focus-visible) {
-  outline: none;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -37,7 +33,7 @@ summary,
 nav {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   height: 3rem;
   padding: 0.3rem;
 }
@@ -57,4 +53,53 @@ nav a[href="advanced.html"] {
 #logo_section {
   display: flex;
   justify-content: center;
+}
+
+#form_section {
+  padding: 1.25rem;
+}
+#form_section form #search_bar_container {
+  display: flex;
+}
+#form_section form #search_bar_container #search_bar {
+  margin: 0 auto;
+  flex: 1;
+  max-width: 584px;
+  height: 44px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  background-color: #FFF;
+}
+#form_section form #search_bar_container #search_bar:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+#form_section form #search_bar_container #search_bar:focus-visible {
+  box-shadow: 0 1px 3px rgba(32, 33, 36, 0.28);
+  outline: 1px rgba(223, 225, 229, 0);
+}
+#form_section form #search_button_container {
+  padding-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+#form_section form #search_button_container .search_button {
+  margin: 11px 5px;
+  height: 36px;
+  padding: 0px 16px;
+  margin-top: 11px;
+  min-width: 54px;
+  text-align: center;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  color: #3c4043;
+  font-size: 0.875rem;
+}
+#form_section form #search_button_container .search_button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
 }/*# sourceMappingURL=styles.css.map */
