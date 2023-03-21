@@ -62,6 +62,15 @@ nav a[href="advanced.html"] {
   display: flex;
   justify-content: center;
 }
+#logo_section #logo_container {
+  position: relative;
+}
+#logo_section #subtitle {
+  position: absolute;
+  color: #4285f4;
+  right: 0;
+  bottom: 0;
+}
 
 #form_section {
   padding: 1.25rem;
@@ -79,6 +88,8 @@ nav a[href="advanced.html"] {
   border: 1px solid #dfe1e5;
   border-radius: 24px;
   background-color: #FFF;
+}
+#form_section form #search_bar_container #search_bar .icon, #form_section form #search_bar_container #search_bar .input_section {
   padding: 5px 8px 0px 14px;
 }
 #form_section form #search_bar_container #search_bar:hover {
@@ -86,12 +97,12 @@ nav a[href="advanced.html"] {
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
   border-color: rgba(223, 225, 229, 0);
 }
-#form_section form #search_bar_container #search_bar .input {
+#form_section form #search_bar_container #search_bar .input_section {
   display: flex;
   flex: 1;
   align-items: center;
 }
-#form_section form #search_bar_container #search_bar .input input[type=search] {
+#form_section form #search_bar_container #search_bar .input_section input[type=search] {
   flex: 1;
   resize: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -111,6 +122,15 @@ nav a[href="advanced.html"] {
   height: 46px;
   padding-right: 13px;
   margin-top: -5px;
+}
+#form_section form #search_bar_container #search_bar #image_search_button {
+  height: 44px;
+  width: 44px;
+  cursor: pointer;
+  padding: 0;
+  padding: 0px 13px 0px 0px;
+  background: transparent;
+  border: none;
 }
 #form_section form #search_button_container {
   padding-top: 18px;

@@ -6,6 +6,7 @@ $font-large: 0.9375rem;
 // Colors
 $color-font-light: #3c4043;
 $color-font-dark: rgba(0,0,0,.87);
+$color-font-images: #4285f4;
 
 $color-search-border: #dfe1e5;
 $color-button: #f8f9fa;
@@ -61,6 +62,7 @@ summary,
 
 // Project specific styles
 
+// Navigation Section
 nav{
     display: flex;
     align-items: center;
@@ -85,12 +87,25 @@ nav{
 
 }
 
+
+// Logo Section
 #logo_section{
     display: flex;
     justify-content: center;
+
+    #logo_container{
+        position: relative;
+    }
+
+    #subtitle{
+        position: absolute;
+        color:$color-font-images;
+        right: 0;
+        bottom: 0;
+    }
 }
 
-
+// Form Section
 #form_section{
     padding: 1.25rem;
 
@@ -109,7 +124,11 @@ nav{
                 border: 1px solid $color-search-border;
                 border-radius: 24px;
                 background-color: #FFF;
-                padding: 5px 8px 0px 14px;
+                
+
+                .icon, .input_section{
+                    padding: 5px 8px 0px 14px;
+                }
 
                 &:hover{
                     background-color: #fff;
@@ -117,7 +136,7 @@ nav{
                     border-color: $color-shadow-border;
                 }
 
-                .input{
+                .input_section{
                     display: flex;
                     flex: 1;
                     align-items: center;
@@ -144,6 +163,17 @@ nav{
                     height: 46px;
                     padding-right: 13px;
                     margin-top: -5px;
+                }
+
+                #image_search_button{
+                    height: 44px;
+                    width: 44px;
+                    cursor: pointer;
+                    padding: 0;
+                    padding: 0px 13px 0px 0px;
+                    background: transparent;
+                    border: none;
+
                 }
             }
 
@@ -177,3 +207,4 @@ nav{
         }
     }
 }
+

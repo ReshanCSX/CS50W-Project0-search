@@ -13,8 +13,10 @@
     </nav>
 
     <div id="logo_section">
-        <img alt="logo" src="images/googlelogo_color_272x92dp.png">
-        <span>images</span>
+        <div id="logo_container">
+            <img alt="logo" src="images/googlelogo_color_272x92dp.png">
+            <span id="subtitle">images</span>
+        </div>
     </div>
 
     <div id="form_section">
@@ -23,18 +25,19 @@
             <div id="search_bar_container">
                 <div id="search_bar">
                     <div class="icon">
-                        <svg id=search_icon xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(32 33 36 / 28%)" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        <svg focusable="false" fill="#9aa0a6" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-iml="1679307395448">
+                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
                         </svg>
                     </div>
-                    <div class="input">
+                    <div class="input_section">
                         <input maxlength="2048" name="q" rows="2" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus role="combobox" spellcheck="false" title="Search" type="search" value="" aria-label="Search"></input>
                         <input type="hidden" name="tbm" value="isch"/>
                     </div>
                     <div class="button">
-                        <button>
-                            <svg id=search_icon xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5" fill="blue" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        <button type="subbmit" id="image_search_button" aria-label="Google Search">
+                            <svg focusable="false" fill="#4285f4" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-iml="1679307395448">
+                                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                </path>
                             </svg>
                         </button>
                     </div>
