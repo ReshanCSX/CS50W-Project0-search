@@ -28,7 +28,6 @@ img {
   max-width: 100%;
 }
 
-label,
 button,
 select,
 summary,
@@ -149,10 +148,97 @@ nav a[href="advanced.html"] {
   background-color: #f8f9fa;
   color: #3c4043;
   font-size: 0.875rem;
+  font-family: Arial, sans-serif;
 }
 #form_section form #search_button_container .search_button:hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   background-color: #f8f9fa;
   border: 1px solid #dadce0;
   color: #202124;
+}
+
+nav .nav_logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+#appbar {
+  margin: 25px 35px;
+}
+#appbar label {
+  color: #d93025;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#underline {
+  border-bottom: #ebebeb 1px solid;
+}
+
+#advanced_form_section {
+  max-width: 1440px;
+  min-width: 200px;
+  margin: 40px 2% 0 45px;
+}
+#advanced_form_section .form_group {
+  width: 100%;
+  clear: both;
+}
+#advanced_form_section .form_group .form_label {
+  display: block;
+  float: left;
+  min-width: 167px;
+  width: 16%;
+  height: 42px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 16px;
+}
+#advanced_form_section .form_group .form_label .label_align {
+  height: 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#advanced_form_section .form_group .input-padding {
+  padding-right: 18px;
+}
+#advanced_form_section .form_group .form_input {
+  display: block;
+  float: left;
+  overflow: hidden;
+  min-width: 167px;
+  width: 50%;
+  min-height: 41px;
+}
+#advanced_form_section .form_group .form_input input {
+  box-sizing: content-box;
+  width: 100%;
+  border: 1px solid #dfe1e5;
+  border-top: 1px solid #c0c0c0;
+  border-radius: 1px;
+  height: 25px;
+  font-size: 13px;
+  text-align: left;
+  padding: 1px 8px;
+}
+#advanced_form_section .form_group .form_input input:focus {
+  outline: none;
+  border: 1px solid #4d90fe;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+#advanced_form_section .form_group .form_input .as_search_button {
+  float: right;
+  min-width: 120px;
+  height: 30px;
+  line-height: 100%;
+  margin: 10px 0;
+  background-color: #357ae8;
+  border: 1px solid #2f5bb7;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFF;
+  padding: 0 12px;
+}
+#advanced_form_section .form_group .form_input .as_search_button:hover {
+  background-color: #4d90fe;
 }/*# sourceMappingURL=styles.css.map */
