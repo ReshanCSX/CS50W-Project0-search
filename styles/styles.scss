@@ -8,6 +8,8 @@ $color-font-light: #3c4043;
 $color-font-dark: rgba(0,0,0,.87);
 $color-font-images: #4285f4;
 $color-font-advanced: #d93025;
+$color-font-label-dark: #777;
+$color-font-lable-light: #555;
 
 $color-line-underline : #ebebeb;
 $color-search-border: #dfe1e5;
@@ -238,8 +240,9 @@ nav{
 }
 
 #advanced_form_section{
-    max-width: 1440px;
+    max-width: 1140px;
     min-width: 200px;
+    width: 96%;
     margin: 40px 2% 0 45px;
 
     .form_group{
@@ -262,6 +265,7 @@ nav{
                 vertical-align: middle
             }
         }
+
         .input-padding{
             padding-right: 18px;
         }
@@ -309,5 +313,55 @@ nav{
                 }
             }
         }
+
+        @media screen and (min-width:1056px) {
+
+            .form_info_head{
+                height: 30px;
+                display: table-cell;
+                vertical-align: middle;
+                font-size: 13px;
+                width: 33%;
+                font-weight: 700;
+                color: $color-font-label-dark;
+                padding-left: 5px;
+            }
+    
+            .form_info{
+                float:left;
+                position:relative;
+                font-size: 11px;
+                height: 30px;
+                vertical-align: middle;
+                font-size: 11px;
+                color: $color-font-lable-light;
+                width: 32%;
+                min-width: 160px;
+                margin: 0 0 8px 1%;
+                padding-left: 5px;
+    
+                .form_info_eg{
+                    font-family: monospace;
+                    white-space: pre;
+                    font-size: 11px;
+                }
+            }
+            
+        }
+
+        @media screen and (max-width:1056px) {
+            .form_info_head{
+                display: none;
+            }
+
+            .form_info{
+                display: none;
+            }
+
+            .form_info_eg{
+                display: none;
+            }
+        }
+
     }
 }

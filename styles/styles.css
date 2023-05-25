@@ -177,8 +177,9 @@ nav .nav_logo {
 }
 
 #advanced_form_section {
-  max-width: 1440px;
+  max-width: 1140px;
   min-width: 200px;
+  width: 96%;
   margin: 40px 2% 0 45px;
 }
 #advanced_form_section .form_group {
@@ -241,4 +242,45 @@ nav .nav_logo {
 }
 #advanced_form_section .form_group .form_input .as_search_button:hover {
   background-color: #4d90fe;
+}
+@media screen and (min-width: 1056px) {
+  #advanced_form_section .form_group .form_info_head {
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 13px;
+    width: 33%;
+    font-weight: 700;
+    color: #777;
+    padding-left: 5px;
+  }
+  #advanced_form_section .form_group .form_info {
+    float: left;
+    position: relative;
+    font-size: 11px;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #555;
+    width: 32%;
+    min-width: 160px;
+    margin: 0 0 8px 1%;
+    padding-left: 5px;
+  }
+  #advanced_form_section .form_group .form_info .form_info_eg {
+    font-family: monospace;
+    white-space: pre;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 1056px) {
+  #advanced_form_section .form_group .form_info_head {
+    display: none;
+  }
+  #advanced_form_section .form_group .form_info {
+    display: none;
+  }
+  #advanced_form_section .form_group .form_info_eg {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
