@@ -53,3 +53,21 @@ This project was built according to these [specifications](https://cs50.harvard.
 6. Aesthetics
 
 * The CSS you write should resemble Google’s own aesthetics.
+
+
+# Project Preview
+
+* Search Page
+  
+![image](https://github.com/ReshanCSX/CS50W-Project0-search/assets/64268212/b7e82b82-7f7f-4e60-b084-c1efc3ed21ba)
+
+* Image Search Page
+  
+![image](https://github.com/ReshanCSX/CS50W-Project0-search/assets/64268212/af563949-d9f5-4032-b8c8-fdb70e804162)
+
+* Advanced Search Page
+  
+![image](https://github.com/ReshanCSX/CS50W-Project0-search/assets/64268212/250c384c-05a5-4f4f-ab6b-bebcb5dcf6e3)
+
+
+
