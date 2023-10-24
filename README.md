@@ -57,6 +57,8 @@ This project was built according to these [specifications](https://cs50.harvard.
 
 # Project Preview
 
+[VIDEO LINK](https://youtu.be/cFMIJbHvR_8)
+
 * Search Page
   
 ![image](https://github.com/ReshanCSX/CS50W-Project0-search/assets/64268212/b7e82b82-7f7f-4e60-b084-c1efc3ed21ba)
